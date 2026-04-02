@@ -1,0 +1,39 @@
+.home__image__container {
+    width: 100%;
+    height: calc(100dvh - 80px);
+    position: relative;
+    overflow: hidden
+}
+
+.home__image__container::after {
+    content: "Dua Lipa";
+    font-family: ScriptC, cursive;
+    color: var(--color__secundario);
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    font-size: clamp(30px, calc(14.06px + 4.98vw), 80px)
+}
+
+.home__image,
+.home__image__container::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.home__image {
+    height: 100%;
+    width: auto;
+    transition: .5s
+}
+
+@media screen and (max-width:600px) {
+    .home__image__container {
+        max-height: 444px
+    }
+
+    .home__image {
+        left: 60%
+    }
+}

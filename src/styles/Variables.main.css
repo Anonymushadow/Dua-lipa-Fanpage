@@ -1,0 +1,94 @@
+/* Tipografias */
+:root {
+    --font-size__small: clamp(14px, calc(13.36px + 0.20vw), 16px);
+    --font-size__body: clamp(17.13px, calc(16.60px + 0.17vw), 18.8px);
+    --font-size__h6: clamp(20.28px, calc(19.19px + 0.34vw), 23.7px);
+    --font-size__h5: clamp(23.42px, calc(21.80px + 0.51vw), 28.5px);
+    --font-size__h4: clamp(26.57px, calc(24.39px + 0.68vw), 33.42px);
+    --font-size__h3: clamp(30px, calc(27.36px + 0.82vw), 38.28px);
+    --font-size__h2: clamp(32.86px, calc(29.59px + 1.02vw), 43.13px);
+    --font-size__h1: clamp(36px, calc(32.18px + 1.20vw), 48px);
+
+    --font__primary: 'Roboto', sans-serif;
+    --font__secondary: 'Playwrite US Trad', cursive;
+}
+
+@font-face {
+    font-family: "ScriptC";
+    src: url("/fonts/ScriptC.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Colores */
+:root {
+    /* Colores principales */
+    --color__primario: #FFA6D3;
+    --color__secundario: #FF0080;
+
+    --color__neutral-1: #ffffff;
+    --color__neutral-2: #a0a0a0;
+    --color__neutral-3: #000000;
+}
+
+/* Espaciados */
+:root {
+    --spacing__xs: clamp(0.25rem, 0.1786rem + 0.3571vw, 0.5rem);
+    --spacing__sm: clamp(0.5rem, 0.3571rem + 0.7143vw, 1rem);
+    --spacing__md: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
+    --spacing__lg: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+    --spacing__xl: clamp(2rem, 1.8571rem + 0.7143vw, 2.5rem);
+}
+
+/* Sombras */
+:root {
+    /* Shadows */
+    --shadow__light: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow__medium: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    --shadow__dark: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*Bordes*/
+:root {
+    /* Borders */
+    --border-radius__sm: .25rem;
+    --border-radius__md: .5rem;
+    --border-radius__lg: .9rem;
+    --border-radius__full: 50%;
+}
+
+/* Transiciones */
+:root {
+    /* Transitions */
+    --transition__fast: .2s ease-in-out;
+    --transition__normal: .3s ease-in-out;
+    --transition__slow: .5s ease-in-out;
+}
+
+/* Opacidad */
+:root {
+    /* Opacity */
+    --opacity__disabled: .5;
+    --opacity__hover: .85;
+}
+
+/* Z-Index */
+:root {
+    /* Z-Index */
+    --z-index__base: 1;
+    --z-index__modal: 1000;
+    --z-index__tooltip: 2000;
+}
+
+/* Tamaños varios */
+:root {
+    /* Sizes */
+    --max-width__content: 1200px;
+    --line-height__base: 1.6;
+}
+
+@media (min-width: 769px) {
+    :root {
+        --line-height__base: 1.8;
+    }
+}

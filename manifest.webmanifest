@@ -1,0 +1,9 @@
+{
+    "name": "Dua Lipa FanPage",
+    "short_name": "DLFP",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFA6D3",
+    "theme_color": "#FF0080",
+    "description": "Fanpage created by DWC"
+}
